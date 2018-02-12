@@ -12,7 +12,13 @@ syntax match stoneDecorator '^\s*\zs@' display nextgroup=stoneName skipwhite
 highlight link stoneDecorator Define
 
 syntax keyword stoneKeyword alias
+syntax keyword stoneKeyword annotation
+syntax keyword stoneKeyword attrs
+syntax keyword stoneKeyword by
+syntax keyword stoneKeyword deprecated
+syntax keyword stoneKeyword doc
 syntax keyword stoneKeyword example
+syntax keyword stoneKeyword error
 syntax keyword stoneKeyword extends
 syntax keyword stoneKeyword import
 syntax keyword stoneKeyword namespace
@@ -20,6 +26,7 @@ syntax keyword stoneKeyword patch
 syntax keyword stoneKeyword route
 syntax keyword stoneKeyword struct
 syntax keyword stoneKeyword union
+syntax keyword stoneKeyword union_closed
 highlight link stoneKeyword Keyword
 
 syntax match stoneName "[a-zA-Z_][a-zA-Z0-9_]*\(\.[a-zA-Z_][a-zA-Z0-9_]*\)*" display contained
